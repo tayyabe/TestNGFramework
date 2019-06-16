@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Smoke Suite]">
+  <listeners>
+    <listener class-name="com.syntax.utills.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Smoke Test(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.syntax.testcases.LoginPageTest2">
+        <methods>
+          <include name="generateReport"/>
+          <include name="invalidLogin"/>
+          <include name="loginToOrangeHRM"/>
+          <include name="doLogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="flushReport"/>
+        </methods>
+      </class> <!-- com.syntax.testcases.LoginPageTest2 -->
+    </classes>
+  </test> <!-- Smoke Test(failed) -->
+</suite> <!-- Failed suite [Smoke Suite] -->
